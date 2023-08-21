@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.board {
+  display: grid;
+  /* gap: 2px; */
+  min-height: 100vh;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.board > div {
+  /* border: 1px solid gray; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+
+button {
+  margin: 2px;
+}
+footer {
+  background-color: black;
+  font-size: small;
+  text-align: center;
+  color: antiquewhite;
+}
