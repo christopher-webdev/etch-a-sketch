@@ -1,3 +1,27 @@
+const board = document.querySelector('.board');
+let isTouchDevice = false;
+
+// Check if the device is touch-based
+if ('ontouchstart' in window || navigator.maxTouchPoints) {
+    isTouchDevice = true;
+}
+
+function handleInteraction(element) {
+    if (isTouchDevice) {
+        element.addEventListener('touchstart', () => {
+            element.style.backgroundColor = getRandomColor();
+        });
+    } else {
+        element.addEventListener('mouseover', () => {
+            element.style.backgroundColor = getRandomColor();
+        });
+    }
+}
+
+
+
+
+
 function createGrid(gridSize) {
   const board = document.querySelector(".board");
   board.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
