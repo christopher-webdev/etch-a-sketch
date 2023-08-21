@@ -1,4 +1,4 @@
-const board = document.querySelector('.board');
+
 let isTouchDevice = false;
 
 // Check if the device is touch-based
